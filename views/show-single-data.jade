@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+  h1 Your single data 
+  p(style='margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;')
+  h2  Title: #{data["title"]}
+  p description: #{data["description"]}
+  p created at: #{data["created_at"]}
+  p(style='margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;')
+  p 
+  form(action="/" method="get")
+    button(type="submit") back 

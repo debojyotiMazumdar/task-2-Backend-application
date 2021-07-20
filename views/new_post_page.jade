@@ -1,0 +1,12 @@
+layout extends 
+
+block content 
+  h1 create post here 
+  p 
+  form(action="create" method="post")
+    p title 
+    input(type="text" name="title")
+    p description 
+    input(type="text" name="description")
+    button(type="submit") create 
+    
